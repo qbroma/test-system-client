@@ -1,7 +1,10 @@
-import { Paper } from '@mui/material';
+import { Button } from '@mui/material';
 
 export function App() {
   return (
-    <Paper />
+    <>
+      <Button variant="contained">????</Button>
+      <Button variant="contained" color="success">?????</Button>
+    </>
   );
 }
