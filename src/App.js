@@ -1,12 +1,21 @@
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import SignIn from './pages/SignIn';
+import ResetPassword from './pages/ResetPassword';
+import SignUp from './pages/SignUp';
+import { Routes, Route } from 'react-router-dom';
+
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 export function App() {
   return (
-      <div>
-          <TextField id="outlined-basic" label="Somethin went wrong" variant="outlined" />
-          <Button variant="contained" color="secondary">Text</Button>
-          <Button variant="outlined" color="error">Text</Button>
-      </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <ResetPassword />
+    </ThemeProvider>
   );
 }
