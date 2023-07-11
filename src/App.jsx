@@ -3,7 +3,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import SignIn from './pages/SignIn';
 import ResetPassword from './pages/ResetPassword';
 import SignUp from './pages/SignUp';
-import { Routes, Route } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
@@ -11,7 +10,7 @@ const theme = createTheme({
   },
 });
 
-export function App() {
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -21,3 +20,5 @@ export function App() {
     </ThemeProvider>
   );
 }
+
+export default App;
