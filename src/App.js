@@ -15,6 +15,8 @@ export function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <SignIn />
+      <SignUp />
       <ResetPassword />
     </ThemeProvider>
   );
