@@ -25,7 +25,7 @@ function SignUp() {
           Sign Up
         </Button>
         <Box sx={{ mt: 2 }}>
-          <Link href="#" variant="body2">
+          <Link href="/SignIn" variant="body2">
             Already have an account?
           </Link>
         </Box>

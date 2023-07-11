@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { Link } from 'react-router-dom';
 
 function ResetPassword() {
   return (
@@ -23,8 +22,8 @@ function ResetPassword() {
         <Button variant="contained" size="large" fullWidth sx={{ my: 1 }}>
           Search
         </Button>
-        <Button variant="contained" size="large" color="inherit" fullWidth sx={{ my: 1 }}>
-          <Link>Cancel</Link>
+        <Button href="/SignIn" variant="contained" size="large" color="inherit" fullWidth sx={{ my: 1 }}>
+          Cancel
         </Button>
       </Box>
     </Container>
